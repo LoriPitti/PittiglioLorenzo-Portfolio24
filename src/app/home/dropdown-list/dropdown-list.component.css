@@ -1,0 +1,55 @@
+#dropdown-icon{
+  width: 5vh;
+  height: 5vh;
+  color: dodgerblue;
+  transition:transform 0.3s ease;
+}
+.btn-primary{
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.menu{
+  width: 40vh;
+  height: 50vh;
+  border-color: dodgerblue;
+  border-width: thin;
+}
+
+ul{
+  margin-top: 6vh;
+  list-style: none;
+  padding: 0;
+
+}
+li{
+  margin-top: 2vh;
+  padding: 0;
+
+}
+a{
+  font-size: 3vh;
+  text-decoration: none;
+  transition: font-size 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a:hover{
+  color: black;
+  font-size: 3.5vh;
+}
+/* -------------------------------------------------------SETTING FOR SMALL SCREEN---------------------------------------*/
+@media only screen and (max-width: 600px) {/* cell */
+  .menu {
+    width: 100vw;
+    height: 100vh;
+  }
+  li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+  }
+
+}

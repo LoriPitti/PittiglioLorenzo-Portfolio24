@@ -1,0 +1,115 @@
+.main-div{
+/* border-color: red;
+  border-width: medium;
+  border-style: solid;*/
+
+  padding: 0;
+
+}
+.div-skill{
+  background-color:dodgerblue;
+  width: 30vh;
+  height: 30vh;
+  transition: 1.2s ease;
+  border-radius: 20px;
+  z-index: 1;
+}
+.div-skill:hover{
+  transform: rotate(90deg);
+}
+h1{
+  position: absolute;
+  font-weight: bold;
+  z-index: 2;
+  color: white;
+  font-size: 4vh;
+  /*border-width: medium;
+  border-color: red;
+  border-style: solid;*/
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1:hover + .div-skill{
+  transform: rotate(90deg);
+}
+
+
+.col
+{
+  justify-content: center;
+  align-content: center;
+  display: flex;
+}
+.c-text{
+  min-height: 30vh;
+}
+
+.c-desc{
+  min-height: 10vh;
+}
+h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 3vh;
+}
+/*--------------------ICONS-------------------------*/
+.icon{
+  margin-top: 2vh;
+  max-height: 10vh;
+  max-width: 10vh;
+}
+.container{
+  margin-top: 3vh;
+  background-color: dodgerblue;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+}
+
+.right{
+  right: 15vh;
+  margin-top: 20vh;
+  background-color: cornflowerblue;
+}
+.left{
+  left: 10vh;
+  background-color: dodgerblue;
+
+}
+.deco{
+  height: 10vh;
+  width: 40vh;
+  position: absolute;
+  opacity: 0.6;
+  transition: 1s ease;
+}
+.deco:hover{
+  transform: scale(1.1);
+}
+.right2{
+  right: 10vh;
+  margin-top: 18vh;
+  width: 60vh;
+  height: 5vh;
+  background-color: dodgerblue;
+}
+.left2{
+  left: 20vh;
+  height: 6vh;
+  width: 45vh;
+  margin-top: 6vh;
+  background-color: cornflowerblue;
+}
+
+
+/* -------------------------------------------------------SETTING FOR SMALL SCREEN---------------------------------------*/
+@media only screen and (max-width: 600px) {/* cell */
+ .left2{
+   display: none;
+ }
+
+}

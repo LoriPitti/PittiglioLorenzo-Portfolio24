@@ -1,0 +1,47 @@
+<div class="container-fluid main-div" >
+  <div class="deco left"></div>
+  <div class="deco right2"></div>
+  <div class="deco right"></div>
+  <div class="deco left2"></div>
+
+  <div class="row">
+    <div class="col">
+      <h1 (mouseover)="showText()" (mouseleave)="hideText()">{{skill}}</h1>
+      <div class="div-skill"><!--(mouseover)="showText()" (mouseleave)="hideText()"--></div>
+    </div>
+  </div>
+    <div class="container r-text" *ngIf="show"  [@slideDown]="show ? 'visible' : 'hidden'">
+        <div class="row">
+          <div class="col c-desc"><h2>{{description}}</h2></div>
+        </div>
+      <div class="row r-icons">
+        <div class="col c1 c" *ngIf="angular">
+          <svg  cIcon name="cibAngular"  class="icon an"></svg>
+        </div>
+        <div class="col c2 c" *ngIf="spring">
+          <svg cIcon name="cibSpring" class="icon sp"></svg>
+        </div>
+        <div class="col c3 c" *ngIf="boot">
+          <svg cIcon name="cibBootstrap"  class="icon bo"></svg>
+        </div>
+        <div class="col c4 c" *ngIf="sql">
+          <svg cIcon name="cibMysql"  class="icon sq"></svg>
+        </div>
+        <div class="col c5 c" *ngIf="java">
+          <svg cIcon name="cibJava"  class="icon ja"></svg>
+        </div>
+        <div class="col c6 c" *ngIf="android">
+          <svg cIcon name="cibAndroid"  class="icon an"></svg>
+        </div>
+        <div class="col c7 c" *ngIf="html">
+          <svg cIcon name="cibHtml5"  class="icon ht"></svg>
+        </div>
+        <div class="col c8 c" *ngIf="css">
+          <svg cIcon name="cibCss3"  class="icon cs"></svg>
+        </div>
+        <div class="col c9 c" *ngIf="types">
+          <svg cIcon name="cibTypescript"  class="icon ty"></svg>
+        </div>
+      </div>
+    </div>
+</div>

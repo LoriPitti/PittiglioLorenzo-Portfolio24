@@ -1,0 +1,144 @@
+.container{
+  /*border-color: blue;
+  border-style: solid;
+  border-width: medium;*/
+  padding-bottom: 2vh;
+}
+.row{
+  /*border-color: red;
+  border-width: medium;
+  border-style: solid;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.r1{
+  margin-top: 5vh;
+}
+.r2{
+  margin-top: 2vh;
+}
+
+.col{
+ /* border-color: darkviolet;
+  border-width: medium;
+  border-style: solid;*/
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.col-card{
+  max-width: 30vh;
+  padding: 0;
+  border-radius: 20px;
+}
+.proj-card{
+  background-color: dodgerblue;
+  height: 30vh;
+  width: 30vh;
+  border-radius: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  transition: 1s ease;
+  z-index: 1
+}
+#card{
+  transition: 1s ease;
+}
+.proj-card:hover{
+  cursor: pointer;
+}
+h1{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  font-size: 4vh;
+  padding:2vh;
+  max-width: 30vh;
+  z-index: 2;
+}
+h1:hover{
+  cursor: pointer;
+}
+h2{
+  color: white;
+}
+
+.div-content{
+  background-color: cornflowerblue;
+  min-height: 50vh;
+  width: 90vh;
+  padding-left: 4vh;
+  padding-right: 4vh;
+  padding-bottom: 2vh;
+  margin-bottom: 2vh;
+}
+.carousel-item{
+  height: 40vh;
+}
+.icon{
+  width: 5vh;
+}
+.d-block{
+}
+
+.deco-1-l{
+  background-color: cornflowerblue;
+  width: 40vh;
+  height: 5vh;
+  position: absolute;
+  left: 20vh;
+  margin-top:-20vh;
+  opacity: 0.6;
+  z-index: 1;
+}
+.deco-1-r{
+  background-color: cornflowerblue;
+  width: 40vh;
+  height: 5vh;
+  position: absolute;
+  right: 20vh;
+  margin-top:20vh;
+  opacity: 0.6;
+  z-index: 1;
+}
+.deco-2-l{
+  background-color: dodgerblue;
+  width: 40vh;
+  height: 10vh;
+  position: absolute;
+  left: 30vh;
+  margin-top:-10vh;
+  opacity: 0.6;
+  z-index: 1;
+}
+.deco-2-r{
+  background-color: dodgerblue;
+  width: 20vh;
+  height: 10vh;
+  position: absolute;
+  right: 45vh;
+  margin-top:10vh;
+  opacity: 0.6;
+  z-index: 1;
+}
+.deco{
+  transition: 0.5s ease;
+}
+.deco:hover{
+  transform: scale(1.2);
+}
+
+/* -------------------------------------------------------SETTING FOR SMALL SCREEN---------------------------------------*/
+@media only screen and (max-width: 600px) {/* cell */
+  .deco-2-l{
+    width: 20vh;
+  }
+  .deco-1-l{
+    width: 35vh;
+
+  }
+}

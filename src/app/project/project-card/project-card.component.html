@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="row r1">
+    <div class="deco-2-l deco"></div>
+    <div class="deco-1-l deco"></div>
+    <div class="deco-1-r deco"></div>
+    <div class="deco-2-r deco"></div>
+    <div class="col col-card" (click)="showHideContent()">
+      <h1>{{ title }}</h1>
+      <div class="proj-card" id="{{id}}"></div>
+    </div>
+  </div>
+  <div class="row r1">
+    <div class="col c-content">
+      <div class="div-content" *ngIf="hidden" [@slideDown]="hidden ? 'visible' : 'hidden'">
+        <div class="row r2">
+          <h2>{{ description }}</h2>
+        </div>
+        <div class="row r2">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" *ngFor="let img of imgs; let i = index" [attr.data-bs-target]="'#carouselExampleCaptions'" [attr.data-bs-slide-to]="i" [class.active]="i === 0" aria-current="true"></button>
+            </div>
+            <div class="carousel-inner">
+              <div *ngFor="let img of imgs; let i = index" class="carousel-item" [class.active]="i === 0">
+                <img [src]="img" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="row r2">
+          <div class="col c8 c" *ngIf="mathlab">
+            <svg cIcon name="cibMathworks"  class="icon mat"></svg>
+          </div>
+          <div class="col c8 c" *ngIf="java">
+            <svg cIcon name="cibJava"  class="icon jv"></svg>
+          </div>
+          <div class="col c8 c" *ngIf="spring">
+            <svg cIcon name="cibSpring"  class="icon mat"></svg>
+          </div>
+          <div class="col c8 c" *ngIf="angular">
+            <svg cIcon name="cibAngular"  class="icon mat"></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

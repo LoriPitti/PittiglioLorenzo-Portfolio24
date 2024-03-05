@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div *ngIf="showAlert" class="alert">Grazie per avermi contattato. Risponderò il prima possibile! <button id="ok" type="button" (click)="showAlert=false">ok</button></div>
+  <div class="div-left-2 deco"></div>
+  <div class="div-left deco"></div>
+  <div class="div-form">
+    <div class="row">
+      <h1>Per qualsiasi informazione compila il form qui </h1>
+    </div>
+    <div class="row">
+      <h1>sotto o contattami telefonicamente</h1>
+    </div>
+      <div class="form row g-3">
+        <div class="col-md-4">
+          <label for="email" class="form-label em">Email</label>
+          <input type="text" class="form-control" id="email" [(ngModel)]="emailSender" placeholder="email" >
+        </div>
+        <div class="form row g-3">
+          <div class="col-md-4">
+            <label for="object" class="form-label obj">Oggetto</label>
+            <input type="text" class="form-control" id="object" [(ngModel)]="mailObj"  placeholder="Oggetto"
+            value="Richiesta informazioni per... ">
+          </div>
+        </div>
+      </div>
+    <div class="form row g-3">
+      <div class="col-md-4">
+        <label for="text" class="form-label tx" >Testo</label>
+        <textarea type="text" class="form-control" id="text" placeholder="testo" [(ngModel)]="mailText" [style.resize]="'none'"> Testo della mail... </textarea>
+      </div>
+    </div>
+  </div>
+  <div class="div-right deco"></div>
+  <div class="div-right-2 deco"></div>
+  <button type="button" class="btn" (click)="sendEmail()">Invia </button>
+</div>

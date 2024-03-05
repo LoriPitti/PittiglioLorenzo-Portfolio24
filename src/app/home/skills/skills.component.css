@@ -1,0 +1,27 @@
+.container-fluid{
+  /*border-width: medium;
+  border-color: dodgerblue;
+  border-style: solid;*/
+  max-width: 100%;
+
+}
+
+ul{
+  /*list-style: none;
+  border-width: medium;
+  border-color: dodgerblue;
+  border-style: solid;*/
+  margin-top: 6vh;
+
+}
+li{
+  margin-bottom: 3vh;
+  /*border-width: medium;
+  border-color: dodgerblue;
+  border-style: solid;*/
+  display: flex;
+  justify-content: center;
+  transition: height 1.2s ;
+
+}
+

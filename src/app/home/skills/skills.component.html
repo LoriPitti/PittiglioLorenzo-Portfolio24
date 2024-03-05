@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <ul>
+    <li id = "id_1" >
+      <app-skill-card [skill]="'Front-End'" (toggle)="toggleDiv($event, 'id_1')"
+      [description]="'Sviluppo della grafica dei siti con i framework Angular e Bootstrap'"
+      [angular]="true"
+      [html]="true"
+      [css]="true"
+      [types]="true"
+      [boot]="true"></app-skill-card>
+    </li>
+    <li id="id_2">
+      <app-skill-card [skill]="'Back-End'"  (toggle)="toggleDiv($event, 'id_2')"
+      [description]="'Sviluppo del server con architettura REST e framework SpringBoot'"
+      [java]="true"
+      [spring]="true"></app-skill-card>
+    </li>
+    <li id="id_3">
+      <app-skill-card [skill]="'Database'"  (toggle)="toggleDiv($event, 'id_3')"
+      [description]="'Manipolazione di dati tramite db relazionale su SQLServer'"
+      [sql]="true"></app-skill-card>
+    </li>
+    <li id="id_4">
+      <app-skill-card [skill]="'Android'"  (toggle)="toggleDiv($event, 'id_4')"
+      [description]="'Progettazione di applicazioni mobile'"
+      [java]="true"
+      [android]="true"></app-skill-card>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,156 @@
+.container-fluid{
+  height: 100vh;
+  background-color: black;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.div-form{
+  background-color: cornflowerblue;
+  min-height: 70vh;
+  width: 80vh;
+  padding-top:2vh;
+  padding-bottom: 2vh;
+}
+.div-left{
+  background-color: cornflowerblue;
+  height: 50vh;
+  width: 20vh;
+  transform: translateX(-60%) translateY(-20%);
+}
+.div-right{
+  background-color: cornflowerblue;
+  height: 50vh;
+  width: 20vh;
+  transform: translateX(60%) translateY(20%);
+}
+.div-left-2{
+  background-color: white;
+  height: 70vh;
+  width: 15vh;
+  transform: translateX(80%) translateY(-10%);
+}
+.div-right-2{
+  background-color: white;
+  height: 70vh;
+  width: 15vh;
+  transform: translateX(-90%) translateY(10%);
+}
+.deco{
+  transition: 1s ease;
+}
+.deco:hover{
+  transform: scale(0.9);
+}
+
+.form{
+ /* border-width: medium;
+  border-style: solid;
+  border-color: red;*/
+}
+.form-control{
+  font-size: 2vh;
+}
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col-md-4{
+ /* border-color: black;
+  border-width: medium;
+  border-style: solid;*/
+  width: 50vh;
+}
+#text{
+  height: 30vh;
+}
+#email{
+  width: 25vh;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+#object{
+  width: 40vh;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.obj{
+  margin-left: 20%;
+  transform: translateX(-50%);
+  font-size: 2.5vh;
+  color: white;
+
+}
+.em{
+  margin-left: 30%;
+  transform: translateX(-50%);
+  font-size: 2.5vh;
+  color: white;
+}
+.tx{
+  font-size: 2.5vh;
+  color: white;
+}
+input{
+  font-size: 1.5vh;
+}
+
+
+h1{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  font-size: 3vh;
+}
+.btn{
+  position: absolute;
+  margin-top: 80vh;
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  font-size: 2.5vh;
+  width: 20vh;
+
+}
+.btn:hover {
+  background-color: dodgerblue;
+}
+/* -------------------------------------------------------SETTING FOR SMALL SCREEN---------------------------------------*/
+@media only screen and (max-width: 600px) {/* cell */
+  .deco{
+    display: none;
+  }
+}
+
+.alert{
+  position: absolute;
+  border-color: green;
+  background: green;
+  opacity: 0.6;
+  width: 40vh;
+  height: 10vh;
+  margin-top: -85vh;
+  font-size: 2vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ok{
+  border-radius: 10px;
+  background: white;
+  border-style: none;
+}
+
+
+

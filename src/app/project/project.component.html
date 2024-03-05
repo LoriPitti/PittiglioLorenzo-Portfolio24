@@ -1,0 +1,51 @@
+<app-dropdown-list></app-dropdown-list>
+<ul>
+  <li id="li_1">
+    <app-project-card [id]="'id_1'"
+                      [title]="'Classificatore di carte'"
+                      [description]="'Progetto realizzato in Mathlab per processare immagini di carte e classificarne il simbolo e il colore. ' +
+               'Anche i gruppi di carte e gli oggetti estranei vengono classificati.'"
+                      [imgs]="['/assets/img/carte_uno.png',
+         '/assets/img/gruppo_di_carte.png',
+         '/assets/img/matlab.png',
+         '/assets/img/picco_carta.png']"
+                      [mathlab]="true"
+                      [java] = "false"
+                      [angular] = "false"
+                      [spring]="false"
+                      (toggle)="toggleDiv($event, 'li_1')"></app-project-card>
+  </li>
+  <li id="li_2">
+    <app-project-card [id]="'id_2'"
+                      [title]="'Server racelog'"
+                      [description]="'Sito web basato su architettura REST che permette agli utenti di tenere traccia dei record personali di Assetto Corsa Competizione ' "
+                      [imgs]="[
+         '/assets/img/acc_home.png',
+         '/assets/img/acc_cars.png',
+         '/assets/img/acc_tracks.png',
+          '/assets/img/acc_signup.png']"
+                      [mathlab]="false"
+                      [java] = "true"
+                      [angular] = "true"
+                      [spring]="true"
+                      (toggle)="toggleDiv($event, 'li_2')"></app-project-card>
+  </li>
+  <li id="li_3">
+    <app-project-card [id]="'id_3'"
+                      [title]="'Storico delle vendite'"
+                      [description]="'Applicazione Android sviluppata in Java per tenere traccia delle vendite effettuate durante la mia esperienza lavorativa come promoter' +
+                                  ' Si appoggia ad un database relazionale SQLite'"
+                      [imgs]="[
+         '/assets/img/app_and_2.png',
+         '/assets/img/app_and_1.png']"
+                      [mathlab]="false"
+                      [java]="true"
+                      [angular] = "false"
+                      [spring]="false"
+                      (toggle)="toggleDiv($event, 'li_3')"></app-project-card>
+  </li>
+</ul>
+
+
+
+<app-footer></app-footer>

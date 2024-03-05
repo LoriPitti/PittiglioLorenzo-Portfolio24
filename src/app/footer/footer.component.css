@@ -1,0 +1,82 @@
+.container-fluid{
+  min-height: 60vh;
+  background-color: dodgerblue;
+  top: 0;
+  padding-top: 5vh;
+}
+.div-form{
+  /*border-color: blue;
+  border-style: solid;
+  border-width: thick;*/
+}
+
+
+.col{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.input-group{
+  height: 5vh;
+
+}
+.form-control{
+  font-size: 2vh;
+}
+.input-group-text{
+  font-size: 2vh;
+}
+#github{
+  min-width: 15vh;
+  max-width: 20vh;
+  display: flex;
+  justify-content: center;
+}
+.row{
+  margin-bottom: 2.5vh;
+  display: flex;
+  justify-content: center;
+}
+p{
+  font-size: 2.5vh;
+  color: white;
+}
+.icon{
+  width: 4vh
+}
+.c-icon{
+  display: flex;
+  justify-content: right;
+}
+.c-contact{
+  display: flex;
+  justify-content: left;
+}
+a {
+  color: white;
+  text-decoration: none; /* Rimuove la sottolineatura */
+  transition: font-size 0.5s;
+}
+.a2{
+  color: black;
+}
+a:hover{
+  font-size: 3vh;
+}
+
+.info{
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 10vh;
+}
+.r-copy{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  margin-top: 10vh;
+}
+

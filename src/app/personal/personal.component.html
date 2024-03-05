@@ -1,0 +1,43 @@
+<app-dropdown-list></app-dropdown-list>
+<div class="container-fluid" id="me">
+  <div class="row">
+    <div class="col">
+      <div class="deco top"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class=" main">
+        <p>Sono uno studente della <i>triennale di informatica</i> presso l' Università degli studi di Milano Biccocca. Mi sono diplomato nel 2020 presso <i>il liceo scientifico</i>
+          opz. scienze applicate nell' I.I.S. Vittorio Bachelet (LC). Prima di iscrivermi in università, ho frequentato un anno accademico di <i>meccatronica e tecnologia per l' automazione industriale</i>, dove ho appreso
+          anche competenze di elettrotecnica, meccanica, progettazione 3d e programmazione Arduino.</p>
+        <p>La passione per la programmazione mi ha spinto fin da subito a mettermi in gioco; infatti, nel 2019, ho fondato
+          un team di <i>robotica nazionale</i>, gli High Voltage, con cui ho partecipato alla Nao Challenge, vincendo varie sfide</p>
+      </div>
+    </div>
+    <div class="col col-photo">
+      <div id="div-info">
+        <p class="info">Classe 2001,<br> Besana in Brianza 20842 Ita</p>
+      </div>
+      <img ngSrc="/assets/img/profilo.jpg" id="photo" alt="foto profilo" height="859" width="788"
+      (mouseover)="showInfo()">
+      <div class="div dec-photo" id="deco" (mouseover)="hideInfo()"></div>
+
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="deco bottom"></div>
+    </div>
+    <div class="col main2 main">
+      <p>Attualmente sto svolgendo il tirocinio presso la sede di Milano dell' azienda <i> Synclab </i>. Il ruolo ricoperto è quello di <i>full stack developer</i>, con focus sui framework
+        <i>Angular</i>,<i>Bootstrap</i> e <i>SpringBoot</i></p>
+      <p>Una delle esperienze lavorative pregresse, esterne a questo settore, è stata quella di lavorare per <i>Asus</i> e <i>Lenovo</i>come promoter. In particolare mi sono occupato di
+      promuover i pc e tablet più adatti alle esigenze dei clienti presenti nei punti vendita. Oltre ad ottenere come obiettivo un fatturato medio giornaliero pari a €500,
+      ho acquisito soft skills di vendita e di comunicazione con il cliente</p>
+    </div>
+  </div>
+
+</div>
+<app-footer id="contacts"></app-footer>

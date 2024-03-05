@@ -1,0 +1,12 @@
+.container-fluid{
+  border-style: solid;
+  border-color: dodgerblue;
+  border-width: medium;
+  min-height: 100vh;
+
+}
+app-dropdown-list{
+  position: absolute;
+  right: 4vh;
+  top: 8vh;
+}

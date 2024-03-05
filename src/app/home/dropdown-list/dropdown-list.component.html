@@ -1,0 +1,14 @@
+<div class="dropdown" >
+  <button type="button" class="btn btn-primary"  data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="false" (click)="rotateIcon()">
+    <svg cIcon name="cilAlignRight" size="xl" id="dropdown-icon" class="dropdown-toggle" ></svg>
+  </button>
+  <div class="dropdown-menu p-4 menu"  >
+    <ul>
+      <li><a [routerLink]="'/'" [fragment]="'title'">Home</a></li>
+      <li><a [routerLink]="'/'" [fragment]="'skills'">Competenze</a></li>
+      <li><a [routerLink]="'/about-me'" [fragment]="'me'">Chi sono</a></li>
+      <li><a [routerLink]="'/projects'">I miei progetti</a></li>
+      <li><a [routerLink]="'/'" [fragment]="'contacts'">Contatti</a></li>
+    </ul>
+  </div>
+</div>
