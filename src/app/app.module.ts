@@ -16,8 +16,6 @@ import { ProjectComponent } from './project/project.component';
 import {NgOptimizedImage} from "@angular/common";
 import { ProjectCardComponent } from './project/project-card/project-card.component';
 import {FormsModule} from "@angular/forms";
-import { CurriculumComponent } from './curriculum/curriculum.component';
-import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 @NgModule({
   declarations: [
@@ -31,7 +29,6 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     PersonalComponent,
     ProjectComponent,
     ProjectCardComponent,
-    CurriculumComponent,
   ],
     imports: [
         BrowserModule,
@@ -40,8 +37,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
         BrowserAnimationsModule,
         AppRoutingModule,
         NgOptimizedImage,
-        FormsModule,
-        PdfViewerModule
+        FormsModule
     ],
   providers: [
     IconSetService

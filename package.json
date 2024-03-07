@@ -21,7 +21,6 @@
     "@coreui/icons": "^3.0.1",
     "@coreui/icons-angular": "^4.7.14",
     "bootstrap": "^5.3.3",
-    "ng2-pdf-viewer": "^10.0.0",
     "ngx-extended-pdf-viewer": "^19.4.0-alpha.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
